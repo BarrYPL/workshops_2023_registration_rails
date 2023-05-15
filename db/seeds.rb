@@ -19,3 +19,7 @@ Task.create(
     { title: 'Read a book', description: 'Take some time to relax and enjoy a good book, whether its a classic novel or a new release.' }
   ]
 )
+
+Task.all.each do |task|
+  task.update(deadline: rand(Time.now..1.year.from_now))
+end

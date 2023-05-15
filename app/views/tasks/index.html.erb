@@ -21,6 +21,7 @@
                   <th scope="col">Todo item</th>
                   <th scope="col">Description</th>
                   <th scope="col">Actions</th>
+                  <th scope="col">Deadline</th>
                 </tr>
               </thead>
               <tbody>
@@ -32,6 +33,7 @@
                     <td>
                       <%= button_to "Delete task", task, method: :delete, class: "btn btn-danger" %>
                     </td>
+                    <td><%= task.deadline %></td>
                   </tr>
                 <% end %>
               </tbody>
